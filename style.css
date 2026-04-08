@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#historial {
+  list-style: none;
+  padding: 0;
+}
+
+#juegoCanvas {
+  display: none;
+  margin: 20px auto;
+  border: 2px solid white;
+  background: black;
+}
