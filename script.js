@@ -53,10 +53,10 @@ function disparar(){
     y: nave.y + Math.sin(nave.angulo) * 20,
     dx: Math.cos(nave.angulo) * 5,
     dy: Math.sin(nave.angulo) * 5,
-    atenuacion: 100
+    atenuacion: 70
   });
 }
-
+//m
 function actualizarDisparo(){
   balas.forEach((bala) => {
     bala.x += bala.dx;
@@ -154,7 +154,7 @@ iniciar.addEventListener("click", () => {
   menu.style.display = "none";
   canvas.style.display = "block";
   juegoActivo = true;
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 2; i++) {
     crearAsteroide();
   }
   loopJuego();

@@ -1,0 +1,13 @@
+services:
+  web-server:
+    image: nginx:latest
+    ports:
+      - "80:80"   #http
+      - "443:443" #https
+    volumes:
+      # Conecta tus carpetas de Windows con las de Linux dentro de Docker
+      - ./cv1:/usr/share/nginx/cv1
+      - ./cv2:/usr/share/nginx/cv2
+      - ./cv3:/usr/share/nginx/cv3
+      - ./certs:/etc/nginx/certs
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
