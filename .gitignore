@@ -1,4 +1,3 @@
 certs/nginx-selfsigned.crt
 certs/nginx-selfsigned.key
-todo-list/node_modules
 express-local-library/node_modules
